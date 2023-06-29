@@ -1,15 +1,20 @@
-<h1>Current Player: {{ player }} </h1>
+<nb-card>
+    <nb-card-body>
+        <h1>Current Player: {{ player }} </h1>
 
-<button nbButton outline status="danger" (click)="newGame()">Start new Game</button>
-
-
-<h2 *ngIf="winner">
-    Player {{ winner }} won the game!
-</h2>
+        <button nbButton outline status="danger" (click)="newGame()">Start new Game</button>
 
 
-<main>
-    <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+        <h2 *ngIf="winner">
+            Player {{ winner }} won the game!
+        </h2>
 
-    </app-square>
-</main>
+
+        <main>
+            <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+
+            </app-square>
+            <p>@ proudly owned by Gaurab</p>
+        </main>
+    </nb-card-body>
+</nb-card>
