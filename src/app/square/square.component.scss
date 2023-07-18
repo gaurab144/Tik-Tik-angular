@@ -1,1 +1,21 @@
-button { width: 100%; height: 100%; font-size: 5em !important; }
+button { 
+    width: 100%; 
+    height: 100%; 
+    font-size: 5em 
+    !important; 
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    button {
+      font-size: 3em; /* Adjust the font size for smaller screens */
+      /* You can add more styles specific to mobile devices here if needed */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

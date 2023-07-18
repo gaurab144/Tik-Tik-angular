@@ -1,10 +1,25 @@
 main {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+     grid-template-columns: 200px 200px 200px;
+    // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts columns based on available space */
     grid-gap: 0px;
 }
   
 app-square {
     border: 1px gray solid;
     height: 200px;
+}
+
+/* Styles for medium-sized screens (e.g., tablets) */
+@media (max-width: 1024px) {
+    app-square {
+      height: 150px; /* Adjust the height for medium-sized screens */
+    }
+  }
+  
+  /* Styles for small screens (e.g., mobile devices) */
+  @media (max-width: 767px) {
+    app-square {
+      height: 100px; /* Adjust the height for smaller screens */
+    }
 }

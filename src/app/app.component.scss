@@ -1,0 +1,20 @@
+/* Default styles for larger screens */
+nb-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+    height: 100vh; /* Make the layout take full viewport height */
+  }
+  
+  /* Styles for medium-sized screens (e.g., tablets) */
+  @media (max-width: 1024px) {
+    nb-layout {
+      grid-template-rows: auto 1fr; /* Header, Content (no footer) */
+    }
+  }
+  
+  /* Styles for small screens (e.g., mobile devices) */
+  @media (max-width: 767px) {
+    nb-layout {
+      grid-template-rows: auto 1fr auto; /* Header, Content, Footer (restored) */
+    }
+  }
